@@ -31,11 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ouvrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.applicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.app1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.app2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,9 +63,31 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
+            // 
+            // applicationsToolStripMenuItem
+            // 
+            this.applicationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.app1ToolStripMenuItem,
+            this.app2ToolStripMenuItem});
+            this.applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
+            this.applicationsToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.applicationsToolStripMenuItem.Text = "Applications";
+            // 
+            // app1ToolStripMenuItem
+            // 
+            this.app1ToolStripMenuItem.Name = "app1ToolStripMenuItem";
+            this.app1ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.app1ToolStripMenuItem.Text = "App 1";
+            this.app1ToolStripMenuItem.Click += new System.EventHandler(this.app1ToolStripMenuItem_Click);
+            // 
+            // app2ToolStripMenuItem
+            // 
+            this.app2ToolStripMenuItem.Name = "app2ToolStripMenuItem";
+            this.app2ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.app2ToolStripMenuItem.Text = "App 2";
             // 
             // pictureBox1
             // 
@@ -83,28 +105,6 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // applicationsToolStripMenuItem
-            // 
-            this.applicationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.app1ToolStripMenuItem,
-            this.app2ToolStripMenuItem});
-            this.applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
-            this.applicationsToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.applicationsToolStripMenuItem.Text = "Applications";
-            // 
-            // app1ToolStripMenuItem
-            // 
-            this.app1ToolStripMenuItem.Name = "app1ToolStripMenuItem";
-            this.app1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.app1ToolStripMenuItem.Text = "App 1";
-            this.app1ToolStripMenuItem.Click += new System.EventHandler(this.app1ToolStripMenuItem_Click);
-            // 
-            // app2ToolStripMenuItem
-            // 
-            this.app2ToolStripMenuItem.Name = "app2ToolStripMenuItem";
-            this.app2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.app2ToolStripMenuItem.Text = "App 2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,7 +115,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Version 2";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
