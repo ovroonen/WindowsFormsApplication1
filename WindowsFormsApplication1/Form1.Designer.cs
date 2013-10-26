@@ -18,7 +18,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
+        }//coucocu
 
         #region Windows Form Designer generated code
 
