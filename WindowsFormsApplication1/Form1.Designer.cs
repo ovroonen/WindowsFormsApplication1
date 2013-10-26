@@ -15,6 +15,7 @@
         {
             if (disposing && (components != null))
             {
+                //DESH comment
                 components.Dispose();
             }
             base.Dispose(disposing);
